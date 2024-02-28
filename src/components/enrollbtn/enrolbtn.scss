@@ -1,0 +1,24 @@
+.enroll_btn_box{
+    box-sizing: border-box;
+    width: 100%;
+    border: 1px solid;
+    display: flex;
+    justify-content: center;
+    .enroll_btn{
+    width: 20%;
+    border: none;
+    @media screen and (max-width: 500px) {
+       width: 100%;
+       box-sizing: border-box;
+       padding: 10px 0;
+       font-size: 20px;
+      
+      }
+    height: fit-content;
+    background-color: rgb(237 124 13);
+    position: fixed; // Fixed positioning to stick the button to the viewport
+  bottom: 20px;
+    color: white;
+}
+
+}
