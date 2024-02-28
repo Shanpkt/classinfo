@@ -1,3 +1,4 @@
+import Certificate from "./components/certificate/certificate";
 import Discription from "./components/discription/discription";
 import Header from "./components/header/header";
 import Logomention from "./components/logomention/logomention";
@@ -11,6 +12,7 @@ function App() {
   <Discription/>
   <Logomention/>
   <Whatuget/>
+  <Certificate/>
     </div>
   );
 }

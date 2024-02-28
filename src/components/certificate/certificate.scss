@@ -1,0 +1,21 @@
+.certi_box{
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 30px;
+    margin-top: 50px;
+
+
+    h4{
+        font-size: 18px;
+        border-bottom: 2px solid #c16cfd;
+        font-family: system-ui;
+    }
+
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
