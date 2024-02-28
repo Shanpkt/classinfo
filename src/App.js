@@ -1,6 +1,7 @@
 import Certificate from "./components/certificate/certificate";
 import Discription from "./components/discription/discription";
 import Enrolbtn from "./components/enrollbtn/enrolbtn";
+import FormComponent from "./components/form/form";
 import Header from "./components/header/header";
 import Logomention from "./components/logomention/logomention";
 import TimeingChart from "./components/timeingChart/timeingChart";
@@ -17,6 +18,7 @@ function App() {
   <Certificate/>
   <TimeingChart/>
   <Enrolbtn/>
+  <FormComponent/>
     </div>
   );
 }
