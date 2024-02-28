@@ -18,6 +18,7 @@ function App() {
   <Certificate/>
   <TimeingChart/>
   <Enrolbtn/>
+  hello
   <FormComponent/>
     </div>
   );
