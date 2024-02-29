@@ -5,6 +5,7 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
+
 import "./whatwillcover.scss"
 
 export default function Whatwillcover() {
@@ -21,8 +22,10 @@ export default function Whatwillcover() {
         </AccordionSummary>
         <AccordionDetails>
           <Typography className='colapbox'>
-           <p>React Hooks - useState, useEffect, useRef, UseNavigation, Usedispach, UseSelector</p>
+           <p> React Hooks - useState, useEffect, useRef, UseNavigation, Usedispach, UseSelector</p>
+           <p>React custom CSS, PROP Passing , SCSS </p>
            <p>Redux, ContexAPI</p>
+           <p>Project deployment</p>
           </Typography>
         </AccordionDetails>
       </Accordion>
