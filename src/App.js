@@ -6,6 +6,7 @@ import Header from "./components/header/header";
 import Logomention from "./components/logomention/logomention";
 import TimeingChart from "./components/timeingChart/timeingChart";
 import Whatuget from "./components/whatuget/whatuget";
+import Whatwillcover from "./components/whatwillcover/whatwillcover";
 
 
 function App() {
@@ -17,9 +18,10 @@ function App() {
   <Whatuget/>
   <Certificate/>
   <TimeingChart/>
+
+  <Whatwillcover/>
   <Enrolbtn/>
-  hello
-  <FormComponent/>
+  {/* <FormComponent/> */}
     </div>
   );
 }
