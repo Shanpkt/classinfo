@@ -4,6 +4,7 @@ import Enrolbtn from "./components/enrollbtn/enrolbtn";
 import FormComponent from "./components/form/form";
 import Header from "./components/header/header";
 import Logomention from "./components/logomention/logomention";
+import Project from "./components/project/project";
 import TimeingChart from "./components/timeingChart/timeingChart";
 import Whatuget from "./components/whatuget/whatuget";
 import Whatwillcover from "./components/whatwillcover/whatwillcover";
@@ -20,8 +21,10 @@ function App() {
   <TimeingChart/>
 
   <Whatwillcover/>
+  <Project/>
   <Enrolbtn/>
-  {/* <FormComponent/> */}
+  <FormComponent/>
+  
     </div>
   );
 }

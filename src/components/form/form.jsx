@@ -1,24 +1,16 @@
 import React, { useState } from 'react';
 import "./form.scss"
-import { TextField, Button, Grid, Typography } from '@mui/material';
-
-// const useStyles = makeStyles((theme) => ({
-//   form: {
-//     '& .MuiTextField-root': {
-//       margin: theme.spacing(1),
-//       width: '25ch',
-//     },
-//   },
-// }));
+import { TextField, Button, Grid, Typography, Select, MenuItem } from '@mui/material';
 
 const FormComponent = () => {
-//  const classes = useStyles();
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
     age: '',
     mobileNumber: '',
     email: '',
+    reactProficiency: '',
+    javascriptProficiency: ''
   });
 
   const handleChange = (e) => {
@@ -31,7 +23,7 @@ const FormComponent = () => {
   };
 
   return (
-    <form  className='form' onSubmit={handleSubmit}>
+    <form className='form' onSubmit={handleSubmit}>
       <Typography variant="h5" gutterBottom>
         User Information
       </Typography>
@@ -88,6 +80,40 @@ const FormComponent = () => {
             onChange={handleChange}
             fullWidth
           />
+        </Grid>
+        <Grid item xs={6}>
+          <Typography variant="body1" gutterBottom>
+            React Proficiency (1 to 6)
+          </Typography>
+          <Select
+            label="Rate YourSelf in React"
+            variant="outlined"
+            name="reactProficiency"
+            value={formData.reactProficiency}
+            onChange={handleChange}
+            fullWidth
+          >
+            {[1, 2, 3, 4, 5, 6].map((value) => (
+              <MenuItem key={value} value={value}>{value}</MenuItem>
+            ))}
+          </Select>
+        </Grid>
+        <Grid item xs={6}>
+          <Typography variant="body1" gutterBottom>
+            JavaScript Proficiency (1 to 6)
+          </Typography>
+          <Select
+            label="Rate YourSelf in JavaScript "
+            variant="outlined"
+            name="javascriptProficiency"
+            value={formData.javascriptProficiency}
+            onChange={handleChange}
+            fullWidth
+          >
+            {[1, 2, 3, 4, 5, 6].map((value) => (
+              <MenuItem key={value} value={value}>{value}</MenuItem>
+            ))}
+          </Select>
         </Grid>
       </Grid>
       <Button type="submit" variant="contained" color="primary">

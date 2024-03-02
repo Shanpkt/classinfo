@@ -5,7 +5,7 @@ import "./whatuget.scss"
 function Whatuget() {
 
 
-    const items=["5 weeks live class on  MERN","5 PROJECTS for understanding Concept","Api fetching learing with BackEnd","Get Certificate After Completion", "Live class recording"]
+    const items=["5 weeks live class on  MERN","5 PROJECTS for understanding Concept","Api fetching learing with BackEnd","Get Certificate After Completion", "Live class recording","1 to 1 doubt discussion"]
   return (
     <div className='willGetBox'>
  <div className='box'>
