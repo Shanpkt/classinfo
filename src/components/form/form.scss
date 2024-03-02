@@ -1,7 +1,20 @@
 .form{
-    border: 1px solid ;
+    //border: 1px solid ;
     width: 100%;
     box-sizing: border-box;
     padding: 0px 18px;
+
+
+    .butn{
+        width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+
+    button{
+        width: 200px;
+    }
 
 }

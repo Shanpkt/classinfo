@@ -1,29 +1,15 @@
-import Certificate from "./components/certificate/certificate";
-import Discription from "./components/discription/discription";
-import Enrolbtn from "./components/enrollbtn/enrolbtn";
-import FormComponent from "./components/form/form";
-import Header from "./components/header/header";
-import Logomention from "./components/logomention/logomention";
-import Project from "./components/project/project";
-import TimeingChart from "./components/timeingChart/timeingChart";
-import Whatuget from "./components/whatuget/whatuget";
-import Whatwillcover from "./components/whatwillcover/whatwillcover";
 
-
+import { Form, Route, Routes } from "react-router-dom";
+import Info from "./components/pages/info";
+import Formfill from "./components/pages/formfill";
 function App() {
   return (
     <div className="App">
-    <Header/>
-  <Discription/>
-  <Logomention/>
-  <Whatuget/>
-  <Certificate/>
-  <TimeingChart/>
 
-  <Whatwillcover/>
-  <Project/>
-  <Enrolbtn/>
-  <FormComponent/>
+      <Routes>
+      <Route  path="/"  element={<Info/>} />  
+      <Route   path="/form" element={<Formfill/>} />
+   </Routes>
   
     </div>
   );

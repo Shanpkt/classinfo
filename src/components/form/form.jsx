@@ -116,9 +116,11 @@ const FormComponent = () => {
           </Select>
         </Grid>
       </Grid>
+      <div   className='butn'>
       <Button type="submit" variant="contained" color="primary">
         Submit
       </Button>
+      </div>
     </form>
   );
 };
