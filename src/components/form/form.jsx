@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import "./form.scss"
 import { TextField, Button, Grid, Typography, Select, MenuItem } from '@mui/material';
+import axios from "axios"
 
 const FormComponent = () => {
   const [formData, setFormData] = useState({
@@ -17,9 +18,11 @@ const FormComponent = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async(e) => {
     e.preventDefault();
-    console.log(formData); // Handle form submission logic here
+    console.log(formData);
+     axios.post("https://classbackendxsx.onrender.com/formData",formData).then((e)=>{console.log(e)})
+     // Handle form submission logic here
   };
 
   return (
