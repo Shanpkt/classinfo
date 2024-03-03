@@ -1,0 +1,27 @@
+.acodian_box {
+  padding: 0 20px;
+}
+
+.acodian_box h4 {
+  color: #b36af7;
+  border-bottom: 1px solid;
+  margin: 10px;
+  font-size: 22px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.acodian_box .header {
+  border: 1px solid #7d7dfe;
+  margin: 0 0 5px 0;
+}
+
+.acodian_box .colapbox {
+  width: 100%;
+  padding: 0 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid gray;
+  -webkit-box-shadow: 2px 2px 2px darkgray;
+          box-shadow: 2px 2px 2px darkgray;
+}
+/*# sourceMappingURL=whatwillcover.css.map */

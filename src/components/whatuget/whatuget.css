@@ -1,0 +1,40 @@
+.willGetBox {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 20px;
+}
+
+.willGetBox .box {
+  -webkit-box-shadow: 0px 0px 7px #b1b1b1;
+          box-shadow: 0px 0px 7px #b1b1b1;
+  border-radius: 30px;
+  background-color: #de90ff;
+}
+
+.willGetBox .box ul > li {
+  text-decoration: none;
+  margin-bottom: 20px;
+  font-size: 19px;
+  font-family: system-ui;
+  color: white;
+}
+
+.willGetBox .box h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: white;
+}
+/*# sourceMappingURL=whatuget.css.map */

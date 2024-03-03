@@ -31,7 +31,7 @@ const FormComponent = () => {
   return (
     <form className='form' onSubmit={handleSubmit}>
       <Typography variant="h5" gutterBottom>
-        User Information
+        PLEASE FILL THE FORM FOR WORKSHOP
       </Typography>
       <Grid container spacing={2}>
         <Grid item xs={6}>

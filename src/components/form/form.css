@@ -1,0 +1,22 @@
+.form {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0px 18px;
+}
+
+.form .butn {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 20px;
+}
+
+.form button {
+  width: 200px;
+}
+/*# sourceMappingURL=form.css.map */
