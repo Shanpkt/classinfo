@@ -3,6 +3,7 @@ import "./form.scss"
 import { TextField, Button, Grid, Typography, Select, MenuItem } from '@mui/material';
 import axios from "axios"
 import CircularIndeterminate from './loading';
+import FilledAlerts from './alert';
 
 const FormComponent = () => {
   const [formData, setFormData] = useState({
@@ -15,7 +16,7 @@ const FormComponent = () => {
     javascriptProficiency: ''
   });
   const [status,setststus]=useState(false)
-
+const [alerts,setalet]=useState('bad')
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
@@ -24,7 +25,12 @@ const FormComponent = () => {
     e.preventDefault();
     console.log(formData);
     setststus(true)
-     axios.post("https://classbackendxsx.onrender.com/formData",formData).then((e)=>{setststus(false);console.log(e)})
+     axios.post("https://classbackendxsx.onrender.com/formData",formData).then((e)=>{setststus(false);
+      if(e.status==200){
+        setalet('good')
+      }
+
+     console.log(e)})
      // Handle form submission logic here
   };
 
@@ -129,6 +135,7 @@ const FormComponent = () => {
       </Button>
       
       </div>
+     {alerts=='good' && <FilledAlerts/>} 
     </form>
   );
 };
