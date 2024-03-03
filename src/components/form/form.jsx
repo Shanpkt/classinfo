@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import "./form.scss"
 import { TextField, Button, Grid, Typography, Select, MenuItem } from '@mui/material';
 import axios from "axios"
+import CircularIndeterminate from './loading';
 
 const FormComponent = () => {
   const [formData, setFormData] = useState({
@@ -13,6 +14,7 @@ const FormComponent = () => {
     reactProficiency: '',
     javascriptProficiency: ''
   });
+  const [status,setststus]=useState(false)
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -21,7 +23,8 @@ const FormComponent = () => {
   const handleSubmit = async(e) => {
     e.preventDefault();
     console.log(formData);
-     axios.post("https://classbackendxsx.onrender.com/formData",formData).then((e)=>{console.log(e)})
+    setststus(true)
+     axios.post("https://classbackendxsx.onrender.com/formData",formData).then((e)=>{setststus(false);console.log(e)})
      // Handle form submission logic here
   };
 
@@ -121,8 +124,10 @@ const FormComponent = () => {
       </Grid>
       <div   className='butn'>
       <Button type="submit" variant="contained" color="primary">
+      {status && <CircularIndeterminate/>}
         Submit
       </Button>
+      
       </div>
     </form>
   );
